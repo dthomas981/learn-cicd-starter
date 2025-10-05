@@ -43,7 +43,6 @@ func TestGetAPIKey(t *testing.T) {
 		t.Run(fmt.Sprintf("TestGetAPIKey Case #%v:", i), func(t *testing.T) {
 			header := http.Header{}
 			header.Add(test.key, test.value)
-			t.Errorf("Forced error\n", err)
 
 			output, err := GetAPIKey(header)
 			if err != nil {
