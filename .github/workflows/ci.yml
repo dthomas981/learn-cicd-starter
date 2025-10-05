@@ -21,7 +21,6 @@ jobs:
       - name: Run unit tests
         run: go test ./... -cover
 
-  tests:
     name: Linting
     runs-on: ubuntu-latest
 
